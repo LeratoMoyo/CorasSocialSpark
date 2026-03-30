@@ -25,7 +25,7 @@
         android:text="Helping you stay connected, one message at a time."
         android:textSize="16sp"
         android:layout_marginBottom="30dp"
-        android:android:gravity="center"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

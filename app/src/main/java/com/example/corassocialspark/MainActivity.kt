@@ -5,7 +5,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val result = findViewById<TextView>(R.id.resultText)
 
         button.setOnClickListener {
+            val userInput = input.text.toString().trim().lowercase()
 
             val message = when (userInput) {
                 "morning" -> "🌞Send a good morning message to a family member"
