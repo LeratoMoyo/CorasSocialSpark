@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:text="💬"
+    android:textSize="60sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Welcome Cora. Let us connect with those you love"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Helping you stay connected, one message at a time."
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        android:android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:text="Lets go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
