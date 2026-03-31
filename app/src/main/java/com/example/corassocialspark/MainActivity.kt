@@ -15,9 +15,12 @@ class MainActivity : AppCompatActivity() {
         val input = findViewById<EditText>(R.id.timeInput)
         val button = findViewById<Button>(R.id.btnSuggest)
         val result = findViewById<TextView>(R.id.resultText)
+        val resetButton = findViewById<Button>(R.id.btnReset)
+
 
         button.setOnClickListener {
             val userInput = input.text.toString().trim().lowercase()
+
 
             val message = when (userInput) {
                 "morning" -> "🌞Send a good morning message to a family member"
@@ -29,10 +32,14 @@ class MainActivity : AppCompatActivity() {
 
                 "" -> "Please enter a time of day😏"
 
-                else -> "Try: morning, mid-morning, afternoon, dinner, or night"
+                else -> "Invalid input.Try: morning, mid-morning, afternoon, dinner, or night"
             }
             result.text = message
             }
+        resetButton.setOnClickListener {
+            input.text.clear()
+            result.text=""
+        }
         }
 
         }
